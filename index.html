@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Claudio's Cube</title>
+        <style>
+            html {
+                margin:0;
+                padding:0;
+            }
+            body {
+                padding: 20px;
+            }
+            canvas {
+                width:800px;
+                height:600px;
+                touch-action: none;
+                border:solid 1px gray;
+                box-shadow: 5px 5px 5px gray;
+            }
+            td:nth-child(1) {
+                width:150px;
+            }
+        </style>
+        <script src="https://cdn.babylonjs.com/babylon.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <h1>Cubo di Claudio</h1>
+        <table>
+            <tr><td>Lato</td><td>120.0</td><td>cm</td></tr>
+            <tr><td>Diagonale interna</td><td id="diag0">207.8</td><td>cm</td>
+            <td><button onclick="change(1)">+</button><button onclick="change(-1)">-</button></td></tb></tr>
+            <tr><td>Diagonale 1</td><td id="diag1">170.0</td><td>cm</td></tr>
+            <tr><td>Diagonale 2</td><td id="diag2">170.0</td><td>cm</td></tr>
+        </table>
+        <p>&nbsp;</p>
+        <canvas id="c" touch-action="none"></canvas>
+    </body>
+</html>
+
